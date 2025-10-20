@@ -22,7 +22,7 @@
 
 ---
 
-## Hyperparameters (5%)  
+## Hyperparameters 
 
 | Parameter | Value |
 |------------|--------|
@@ -36,7 +36,7 @@
 
 ---
 
-## If you use RNN or GRU instead of LSTM (10%)
+## If you use RNN or GRU instead of LSTM 
 
 ### Experimental Results
 
@@ -65,7 +65,7 @@ GRU 是對 LSTM 的簡化版本（只保留 update 與 reset gate）。
 
 ---
 
-## If training set uses 3-digit numbers and evaluation uses 2-digit numbers (10%)
+## If training set uses 3-digit numbers and evaluation uses 2-digit numbers 
 
 ### 現象說明
 模型在訓練過程中只看過「三位數」形式，但測試是「兩位數」，導致：
@@ -80,7 +80,7 @@ GRU 是對 LSTM 的簡化版本（只保留 update 與 reset gate）。
 
 ---
 
-## If 20% of training samples have incorrect answers (10%)
+## If 20% of training samples have incorrect answers 
 
 ### 效果分析
 - **標籤噪音 (Label Noise)**：同一輸入對應多個輸出 → 模型混淆  
@@ -99,7 +99,7 @@ GRU 是對 LSTM 的簡化版本（只保留 update 與 reset gate）。
 
 ---
 
-## Why do we need Gradient Clipping? (5%)
+## Why do we need Gradient Clipping? 
 
 | 梯度裁剪設定 | Epoch 30 EM | Train Loss | 現象 |
 |---------------|-------------|-------------|--------|
@@ -115,7 +115,7 @@ GRU 是對 LSTM 的簡化版本（只保留 update 與 reset gate）。
 
 ---
 
-## Anything that can strengthen your report. (5%)
+## Anything that can strengthen your report. 
 
 ### 任務特性
 這個任務屬於「字元級序列生成（Character-Level Sequence Generation）」：
@@ -141,7 +141,7 @@ GRU 是對 LSTM 的簡化版本（只保留 update 與 reset gate）。
 
 ---
 
-## Training Logs & Evaluation Accuracy (10%)
+## Training Logs & Evaluation Accuracy 
 
 | 模型 | 梯度裁剪 | 最終 EM | 最終 Loss |
 |------|------------|----------|------------|
