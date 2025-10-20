@@ -152,4 +152,11 @@ GRU 是對 LSTM 的簡化版本（只保留 update 與 reset gate）。
 | LSTM | 有 | 0.9273 | 0.6575 |
 | LSTM | 無 | 0.9126 | 0.6689 |
 
+有梯度裁減：
+
+![Example](fig/LSTM_training_curve.png)
+
+沒有梯度裁減：
+
+![Example](fig/LSTM(no_clipping)_training_curve.png)
 
