@@ -51,7 +51,9 @@
 RNN 沒有 gating mechanism，因此在長序列中容易出現：  
 - 梯度消失（vanishing gradient）→ 無法記住前面運算結果  
 - 資訊遺失 → 「進位規則」或「括號結構」無法被長期保存  
-- 訓練不穩 → EM 只有 0.35 左右，Loss 難以下降  
+- 訓練不穩 → EM 只有 0.35 左右，Loss 難以下降
+- 
+![RNN](fig/RNN_training_curve.png)
 
 結果：模型幾乎無法學會完整的算術規則，只能「背樣式」，輸出常錯。  
 
@@ -60,6 +62,8 @@ GRU 是對 LSTM 的簡化版本（只保留 update 與 reset gate）。
 - 能部分解決梯度消失問題  
 - 訓練更快、參數較少  
 - 表現接近 LSTM  
+
+![Example](fig/GRU_training_curve.png)
 
 結果：GRU 的 EM≈0.93，Train Loss≈0.65，幾乎與 LSTM 一樣好。  
 
